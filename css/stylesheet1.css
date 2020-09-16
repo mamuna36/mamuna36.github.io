@@ -1,0 +1,200 @@
+body{
+    /* border: gray solid 1px; */
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    margin: auto;
+    max-width: 80vw;
+}
+
+.profile-photo {
+    height: 12.5rem;
+    width:  12.5rem;
+    display: block;
+    margin: 1rem auto 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+ header .profile-photo img {
+     width: 100%;
+ }
+ h1 {
+     text-decoration: none;
+     text-align: center;
+     margin-bottom: 0;
+     font-family: 'IM Fell English SC', serif;
+     font-size: 2rem;
+ } 
+#subtitle {
+    color: gray;
+    margin: 0 auto 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+}
+@font-face {
+    font-family: magic;
+    src: url("../fonts/Magic Hat.ttf");
+}
+h2{
+    /* font-family: magic, Arial, sans-serif; */
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-shadow: gray 0 0 5px;
+}
+#menu {
+        display: block;
+        padding: 0;
+        margin: 0;    
+}
+#menu a {
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem  0.5rem 0.5rem 2.5rem;
+    background-color:#B9B9B9;
+    margin: 0.0625rem auto 0;
+}
+
+#menu a:after { 
+    content: ">";
+    position: absolute;
+    right: 0.4em;    
+}
+h1, h2 {
+        margin: 1rem auto 0.5rem;
+    }
+h2 {
+    border-bottom: 1px gray solid;
+}
+
+h3 {
+    margin: 0.5rem;
+}
+#cv ul li em {
+    color: grey;
+    display: block;
+}    
+#cv ul li .job {
+        display: block;
+    }
+#cv .download {
+    text-align: center;
+    
+}
+a[download] {
+    color: indigo;
+}
+#cv .download a {
+    text-decoration: none;
+}
+#portfolio a {
+    text-decoration: none;
+}
+#portfolio a .project1 {
+    display: block;
+    width:  12.5rem;
+    margin: 1rem auto;
+    border: #000 solid 0.05rem;
+    overflow: hidden;
+}
+#portfolio a .project1 img {
+    width: 100%;
+}
+#portfolio a .link-text{
+    color: #a9a9a9;
+    display: block;
+    margin: 0.4rem auto;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+}
+#portfolio a em {
+    color: lightgray;
+}
+
+.skills {
+    margin: 0 1rem;
+} 
+.skills .progress-bar{
+    border: gray 0.05rem solid;
+    border-radius: 0.5rem;
+    height: 0.7rem;
+}
+.skills .progress{
+    background-color: #29C9D4;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+#contact a{
+    text-decoration: none;
+    margin: 0 0.625rem;
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact li {
+    list-style-type: none;
+    margin: auto;
+}
+#contact i{
+    background-color: #fff;
+    color: black;
+    margin: 2px 7px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 500px) {
+    #menu a:hover{
+        background-color: black;
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+        #menu a:active {
+        color: crimson;
+    }
+       #menu a::after {
+           display: none;
+       }
+       #cv .download a:hover {
+        text-decoration: underline;
+    }
+    #portfolio a:hover .link-text{
+        text-decoration: underline;
+    }
+       #contact a:hover{
+        color: #29C9D4;
+    } 
+     #contact a:hover i{
+        color: #29C9D4;
+    }
+}
+
+@media screen and (min-width: 633px) {
+    header {
+        height: 100vh;
+        
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #menu a {display: inline-block;
+             padding: 0 5%;
+             text-align: center;
+             font-size: 1.5em;
+             text-transform: uppercase;
+    }
+    #menu{
+        display: inline-flex;
+        text-align: justify;
+        width: 100%;
+   }
+   #contact a {
+       font-size: 1.2rem;
+   }
+}
+@media print {
+    header, nav, footer{
+        display:none;
+    } 
+}
